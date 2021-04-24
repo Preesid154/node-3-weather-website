@@ -1,5 +1,3 @@
-console.log("CLient side JS loaded")
-
 //connecting hbs with the js
 const weatherForm = document.querySelector('form')
 //value extracted from form which the user enters on the screen
