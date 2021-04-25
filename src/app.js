@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast')
 
 // we call to create a new express appl. app stores express appl
 const app = express()
+const port = process.env.PORT || 3000
 
 //Defined paths for express config
 const publicDirPath = path.join(__dirname, '../public')
@@ -110,10 +111,12 @@ app.get('*',(req,res)=>{
 })
 
 // starting the server. 3000 is local dev port number
-app.listen(3000, ()=>{
+
+app.listen(port, ()=>{
     // console msg
     console.log('Server is up on port 3000')
 })
+
 
 
 
